@@ -296,29 +296,29 @@
 </head>
 <body>
     <div class="container">
-        <h2>Predicción de MPG con Random Forest</h2>
+        <h2>Consumo automático de combustible</h2>
         <form method="POST" action="/">
             <div class="form-group">
-                <label for="displacement">Displacement:</label>
+                <label for="displacement">Desplazamiento:</label>
                 <input type="number" id="displacement" name="displacement" step="0.1" required>
             </div>
             <div class="form-group">
-                <label for="weight">Weight:</label>
+                <label for="weight">Peso:</label>
                 <input type="number" id="weight" name="weight" step="0.1" required>
             </div>
             <div class="form-group">
-                <label for="model_year">Model Year:</label>
+                <label for="model_year">Año del modelo:</label>
                 <input type="number" id="model_year" name="model_year" step="1" required>
             </div>
             <div class="form-group">
-                <label for="horsepower">Horsepower:</label>
+                <label for="horsepower">Caballo de fuerza:</label>
                 <input type="number" id="horsepower" name="horsepower" step="0.1" required>
             </div>
             <button type="submit">Predecir MPG</button>
         </form>
         <div id="result">
             {% if prediction %}
-                <p>Predicción de MPG: {{ prediction }} mpg</p>
+                <p>Indica que son: {{ prediction }} mpg</p>
             {% endif %}
         </div>
     </div>
